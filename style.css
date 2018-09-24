@@ -1,0 +1,228 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0;}
+
+
+body {
+    background: #000;
+    font-size: 14px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+p {
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: #fff;
+    line-height: 1.7
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 74px;
+    background: rgba(0,0,0,.95)
+}
+
+header .inr {
+    width: 100%;
+    height: 100%;
+    max-width: 1600px;
+    padding: 0 50px;
+}
+header .inr {
+    text-align: center;
+    position: relative;
+}
+.home {
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    padding: 0 0 18px;
+}
+.home.current {
+    border-bottom: 1px solid #fff;
+}
+
+nav.locale {
+    position: absolute;
+    left: 130px;
+    bottom: 19px;
+}
+nav.locale ul li {
+    display: inline-block;
+}
+nav.locale ul li a {
+    border: 1px solid #000;
+    background: #000;
+    font-size: 12px;
+    padding: 9px 20px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 10px;
+    margin: 0 4px;
+}
+nav.locale ul li a:hover {
+    border: 1px solid #222;
+}
+nav.locale ul li.current a {
+    display: inline-block;
+    background: #242424;
+}
+
+nav.global ul li {
+    display: inline-block;
+}
+nav.global ul li.current a {
+    border-bottom: 3px solid #fff;
+}
+nav.global ul li:hover a {
+    color: #dfdfdf;
+}
+
+nav.global ul li a {
+    letter-spacing: 1px;
+    bottom: 3px;
+    padding: 30px 36px 27px 36px;
+    display: inline-block;
+}
+
+.search {
+    width: 100px;
+    background: #000;
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.search.on {
+    width: calc(100% - 100px);
+}
+.search input {
+    opacity: 0;
+}
+.search.on input {
+    opacity: 1
+}
+.search input[type="text"]{
+    color: #fff;
+    background: #000;
+    padding: 20px 50px;
+    font-size: 32px;
+    width: calc(100% - 100px);
+    height: calc(100% - 40px);
+    border: 0;
+    outline: 0;
+    font-weight: 100;
+}
+.search:hover {
+    cursor: pointer
+}
+.search-inr {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.search-inr svg {
+    position: absolute;
+    bottom: 24px;
+    right: 50px;
+}
+
+.page {
+    width: 100%;
+    display: flex
+}
+
+.page figure {
+    margin: 40px;
+}
+.page figure img {
+    vertical-align: bottom;
+    width: auto;
+    max-width: 100%;
+    height: auto
+}
+.page figure.s img {
+    max-width: 800px;
+}
+.page figure figcaption {
+    padding: 17px 30px;
+    background: #111;
+    max-width: 680px;
+    line-height: 1.6;
+    color: #555;
+}
+.page h1 {
+    margin: 60px 120px 0;
+    font-size: 53px;
+    font-weight: 300;
+    color: #fff;
+}
+.page .cat {
+    font-style: italic;
+    color: #0070c9;
+    font-size: 20px;
+    font-weight: 100;
+}
+.page p {
+    margin: 20px 120px 0;
+    max-width: 480px;
+}
+aside.header {
+    width: 100%;
+    max-width: 132px;
+}
+.page-back {
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+.page-back {
+    width: 52px;
+    background: #222;
+    position: fixed;
+    top: 60px;
+    left: 50px;
+}
+.page-back:hover {
+    background: #666;
+    cursor: pointer;
+}
+section.content {
+    width: 100%;
+    height: 100%;
+}
+nav.archive {
+    position: fixed;
+    top: 200px;
+    left: 50px;
+}
+nav.archive ul li.current a {
+    color: #fff;
+}
+nav.archive ul li a:hover {
+    color: #666
+}
+nav.archive ul li a {
+    line-height: 1;
+}
+nav.archive ul li a {
+    margin-top: 28px;
+    color: #222;
+    font-size: 28px;
+    padding: 0;
+    display: inline-block;
+}
+.require .date {
+    margin-top: 13px;
+    font-style: italic;
+    color: #333;
+}
